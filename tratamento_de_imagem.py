@@ -12,13 +12,13 @@ def gerar_certificado(nome):
     :return: certificado com nome
     """
     # PEGAR O 'BACKGOUND'
-    base = Image.open(r"C:\Certificado_automatizado\Exemplo Certificado.png").convert("RGBA")
+    base = Image.open(r"C:\CertificadoAutomatizado-Python\Exemplo Certificado.png").convert("RGBA")
 
     # CRIAR UMA IMAGEM PRA DESENHAR POR CIMA
     txt = Image.new("RGBA", base.size, (255,255,255,0))
 
     # PEGAR A FONTE
-    fonte = ImageFont.truetype(r"C:\Certificado_automatizado\playfair-display-black-italic.ttf", 96)
+    fonte = ImageFont.truetype(r"C:\CertificadoAutomatizado-Python\playfair-display-black-italic.ttf", 96)
 
     # DESENAHR
     x = ImageDraw.Draw(txt)

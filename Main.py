@@ -2,7 +2,7 @@ import pandas as pd
 import tratamento_de_imagem as tdi
 
 # LER A TABELA NO EXCEL
-x = pd.read_excel(r"C:\Certificado_automatizado\tabela.xlsx")
+x = pd.read_excel(r"C:\CertificadoAutomatizado-Python\tabela.xlsx")
 
 # LER O NUMERO DE LINHAS DE COLUNAS
 l = x.shape
