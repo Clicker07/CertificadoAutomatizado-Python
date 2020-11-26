@@ -41,4 +41,6 @@ def gerar_certificado(nome):
 
     out.show()
 
+import smtplib
+
 
