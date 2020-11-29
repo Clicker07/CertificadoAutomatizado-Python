@@ -33,13 +33,13 @@ def gerar_certificado(nome):
     else:
         x.text((500, 550), f"{nome}", font=fonte, fill=(198,149,72, 255))
 
-    out = Image.alpha_composite(base, txt)
+
 
     nome = nome.replace(" ", "_")
 
     Image.alpha_composite(base, txt).save(f"Certificado_{nome}.png")
 
-    out.show()
+
 
 import smtplib
 
