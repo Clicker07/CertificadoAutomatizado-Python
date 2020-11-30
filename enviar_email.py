@@ -1,5 +1,4 @@
 import smtplib
-import getpass
 import unicodedata
 from email.mime.multipart import MIMEMultipart
 from email.mime.base import MIMEBase
@@ -65,7 +64,6 @@ def send_email(nome, email_to,nomearq,password):
         print("Email enviado")
     except smtplib.SMTPRecipientsRefused:
         print("Endereço email do destinario invalido")
-
     finally:
         server.quit()
 

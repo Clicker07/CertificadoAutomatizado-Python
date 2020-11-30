@@ -12,7 +12,7 @@ def gerar_certificado(nome):
     :return: certificado com nome
     """
     # PEGAR O 'BACKGOUND'
-    base = Image.open(r"C:\CertificadoAutomatizado-Python\Exemplo Certificado.png").convert("RGBA")
+    base = Image.open(r"C:\CertificadoAutomatizado-Python\Certificado exemplo.png").convert("RGBA")
 
     # CRIAR UMA IMAGEM PRA DESENHAR POR CIMA
     txt = Image.new("RGBA", base.size, (255,255,255,0))
@@ -27,11 +27,11 @@ def gerar_certificado(nome):
 
     if len(nome) <= 14:
         #Desenhar texto full color
-        x.text((700,550), f"{nome}", font = fonte, fill = (198,149,72,255))
+        x.text((700,500), f"{nome}", font = fonte, fill = (198,149,72,255))
     elif len(nome) > 14 and len(nome) <= 25:
-        x.text((650, 550), f"{nome}", font=fonte, fill=(198,149,72, 255))
+        x.text((650, 500), f"{nome}", font=fonte, fill=(198,149,72, 255))
     else:
-        x.text((500, 550), f"{nome}", font=fonte, fill=(198,149,72, 255))
+        x.text((500, 500), f"{nome}", font=fonte, fill=(198,149,72, 255))
 
 
 
@@ -41,6 +41,6 @@ def gerar_certificado(nome):
 
 
 
-import smtplib
+
 
 
